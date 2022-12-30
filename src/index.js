@@ -13,6 +13,8 @@ const upload = multer()
 const app = express()
 app.use(upload.array())
 
+app.use(express.json())
+
 app.post("/anjay", function(req, res) {
     res.json({message: "Ntap"})
 })
