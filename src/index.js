@@ -4,10 +4,10 @@ import conn from './mysql.js'
 import { isMainThread } from "node:worker_threads"
 import { login, register } from './user.js'
 
-conn.connect(function(err) {
-    if (err) throw err
-    console.log('Connected')
-})
+// conn.connect(function(err) {
+//     if (err) throw err
+//     console.log('Connected')
+// })
 
 const upload = multer()
 const app = express()
